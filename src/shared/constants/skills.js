@@ -1,0 +1,140 @@
+/* ============================================================
+   HABILIDADES - niveles de 0 a 100
+   Regla aplicada: los niveles menores a 50 se muestran como 50.
+   ============================================================ */
+
+export const skillGroups = [
+  {
+    title: "Lenguajes",
+    skills: [
+      { name: "Java", level: 70 },
+      { name: "Java Web (Servlets, JSP)", level: 70 },
+      { name: "JavaScript", level: 50 },
+      { name: "C#", level: 50 },
+      { name: "HTML", level: 50 },
+      { name: "CSS", level: 60 },
+    ],
+  },
+  {
+    title: "Frontend & Mobile",
+    skills: [
+      { name: "React", level: 50 },
+      { name: "React Native", level: 50 },
+      { name: "Android Studio", level: 50 },
+      { name: "Bootstrap", level: 50 },
+      { name: "Tailwind CSS", level: 50 },
+      { name: "Java FXML", level: 58 },
+      { name: "Scene Builder", level: 78 },
+      { name: "Figma", level: 50 },
+    ],
+  },
+  {
+    title: "Backend & APIs",
+    skills: [
+      { name: "Node.js", level: 50 },
+      { name: ".NET", level: 50 },
+      { name: "Spring Boot", level: 50 },
+      { name: "Maven", level: 50 },
+      { name: "GlassFish", level: 50 },
+      { name: "Postman", level: 85 },
+      { name: "Socket.IO", level: 50 },
+      { name: "Jitsi Meet API", level: 50 },
+      { name: "APIs de IA", level: 70 },
+      { name: "Grok API", level: 50 },
+    ],
+  },
+  {
+    title: "Bases de Datos",
+    skills: [
+      { name: "MySQL", level: 80 },
+      { name: "Tutorias de MySQL", level: 85 },
+      { name: "MySQL Workbench", level: 60 },
+      { name: "PostgreSQL", level: 65 },
+      { name: "pgAdmin 4", level: 50 },
+      { name: "MongoDB", level: 50 },
+      { name: "Neon", level: 50 },
+    ],
+  },
+  {
+    title: "Herramientas",
+    skills: [
+      { name: "Git", level: 75 },
+      { name: "GitHub", level: 65 },
+      { name: "GitKraken", level: 70 },
+      { name: "Visual Studio Code", level: 80 },
+      { name: "Visual Studio", level: 50 },
+      { name: "NetBeans IDE", level: 58 },
+      { name: "IntelliJ IDEA", level: 50 },
+      { name: "Notepad++", level: 50 },
+      { name: "Docker", level: 50 },
+      { name: "Render", level: 50 },
+      { name: "Vercel", level: 50 },
+      { name: "IA aplicada (ChatGPT, Claude, Grok)", level: 70 },
+      { name: "CCNA 1", level: 50 },
+      { name: "IT Essentials", level: 50 },
+      { name: "Cisco Packet Tracer", level: 50 },
+      { name: "Microsoft PowerPoint", level: 85 },
+      { name: "Microsoft Word", level: 85 },
+      { name: "Microsoft Excel", level: 50 },
+    ],
+  },
+  {
+    title: "Cursos",
+    skills: [
+      { name: "Power BI", level: 70 },
+      { name: "Tablas dinamicas", level: 50 },
+      { name: "Java", level: 70 },
+    ],
+  },
+]
+
+export const agileProfile = {
+  methodology: "Scrum",
+  roles: ["Scrum Master", "Product Owner", "Desarrollador Full Stack"],
+  responsibilities: [
+    "Planificacion y coordinacion de Sprints.",
+    "Organizacion y seguimiento de tareas con metodologias agiles.",
+    "Administracion y priorizacion del Product Backlog.",
+    "Definicion de historias de usuario y requerimientos tecnicos.",
+    "Desarrollo frontend, backend e integracion de APIs.",
+    "Diseno y arquitectura de bases de datos relacionales y NoSQL.",
+    "Apoyo en tutorias de MySQL, consultas avanzadas, triggers y logica de base de datos.",
+    "Integracion y uso de APIs externas para comunicacion, videollamadas, IA y servicios de datos.",
+    "Uso de herramientas de inteligencia artificial como apoyo para analisis, documentacion y desarrollo.",
+    "Control de versiones mediante Git y GitHub.",
+  ],
+  strengths: [
+    "Analisis previo de funcionalidades antes de iniciar el desarrollo.",
+    "Enfoque en arquitectura, mantenibilidad y crecimiento del producto.",
+    "Capacidad para anticipar escenarios de uso y edge cases.",
+    "Fortaleza en MySQL para resolver consultas complejas, modelado y automatizacion con triggers.",
+    "Manejo eficiente de IA y APIs de IA con prompts claros y contextuales para evitar iteraciones innecesarias.",
+    "Vision integral del ciclo de desarrollo, desde la planificacion hasta la entrega.",
+  ],
+}
+
+export const techStack = [
+  "React",
+  "Java",
+  "Node.js",
+  "Tailwind",
+  "PostgreSQL",
+  "MySQL",
+  "MongoDB",
+  "Figma",
+  "Power BI",
+  "Vercel",
+  "Render",
+  "Socket.IO",
+  "Jitsi Meet",
+  "Neon",
+  "ChatGPT",
+  "Claude",
+  "Grok",
+  "Postman",
+  "Spring Boot",
+  "Git",
+  "GitHub",
+  "Scrum",
+  "React Native",
+]

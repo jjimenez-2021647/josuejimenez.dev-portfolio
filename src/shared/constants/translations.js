@@ -1,0 +1,185 @@
+export const translations = {
+  es: {
+    nav: {
+      home: "Inicio",
+      about: "Sobre mi",
+      skills: "Skills",
+      experience: "Trayectoria",
+      projects: "Proyectos",
+      achievements: "Logros",
+      contact: "Contacto",
+    },
+    hero: {
+      cta: "Disponible para nuevos proyectos",
+      buttonProjects: "Ver proyectos",
+      buttonContact: "Contáctame",
+      role: "Perito técnico en computación",
+      typingWords: [
+        "Perito técnico en computación",
+        "React - Node - Tailwind",
+        "Interfaces con carácter",
+      ],
+      tagline: "Desarrollo soluciones full stack con enfoque en arquitectura, producto y crecimiento.",
+    },
+    about: {
+      eyebrow: "Sobre mí",
+      title: "Quién soy detrás del código.",
+      details: {
+        edad: "Edad",
+        ubicacion: "Ubicación",
+        experiencia: "Experiencia",
+        formacion: "Formación",
+        disponibilidad: "Estado",
+        email: "Email",
+      },
+    },
+    profile: {
+      about:
+        "Soy Josué Gilberto Jiménez Ajtún, perito técnico en computación de la Ciudad de Guatemala. He trabajado en proyectos presentados en Expo Kinal, preprácticas en desarrollo web y soluciones full stack con enfoque en arquitectura, bases de datos, escalabilidad y experiencia de usuario. También cuento con curso aprobado de Power BI, inglés B2 y manejo eficiente de herramientas de IA. Tengo pendiente realizar nuevas prácticas en desarrollo frontend y backend.",
+      phrase:
+        "No solo desarrollo software funcional; diseño soluciones completas, escalables y listas para evolucionar.",
+      role: "Perito técnico en computación",
+      details: {
+        experiencia: "Expo Kinal, prepracticas y proyectos full stack",
+        disponibilidad: "Abierto a practica y proyectos",
+      },
+    },
+    skills: {
+      eyebrow: "Habilidades",
+      title: "Herramientas con las que construyo.",
+      description:
+        "He participado en proyectos como Scrum Master, Product Owner y Desarrollador Full Stack, conectando la planificación del producto con la implementación técnica.",
+      agile: {
+        title: "Metodología ágil",
+        methodology: "Scrum",
+        responsibilitiesTitle: "Responsabilidades",
+        strengthsTitle: "Fortalezas",
+      },
+      roles: ["Scrum Master", "Product Owner", "Desarrollador Full Stack"],
+    },
+    experience: {
+      eyebrow: "Trayectoria",
+      title: "Educacion y experiencia.",
+      education: "Educacion",
+      experience: "Experiencia",
+    },
+    projects: {
+      eyebrow: "Proyectos",
+      title: "Trabajo seleccionado.",
+      modalRepo: "Repositorio",
+      modalDemo: "Demo",
+    },
+    achievements: {
+      eyebrow: "Logros",
+      title: "Numeros y reconocimientos.",
+      certificates: "Certificados",
+      viewImage: "Ver imagen",
+      downloadPdf: "Descargar PDF",
+    },
+    contact: {
+      eyebrow: "Contacto",
+      title: "Trabajemos juntos.",
+      description:
+        "Tienes un proyecto en mente o una oportunidad? Escribeme y conversemos. Respondo lo antes posible.",
+      fieldName: "Nombre",
+      fieldSubject: "Asunto",
+      fieldMessage: "Mensaje",
+      placeholderName: "Tu nombre",
+      placeholderSubject: "De que hablamos?",
+      placeholderMessage: "Cuentame sobre tu proyecto...",
+      buttonSend: "Enviar mensaje",
+      buttonSent: "Correo enviado",
+    },
+    footer: {
+      backToTop: "Volver arriba",
+      designedWith: "Diseñado y desarrollado con React",
+      cv: "CV",
+    },
+  },
+  en: {
+    nav: {
+      home: "Home",
+      about: "About",
+      skills: "Skills",
+      experience: "Experience",
+      projects: "Projects",
+      achievements: "Achievements",
+      contact: "Contact",
+    },
+    hero: {
+      cta: "Available for new projects",
+      buttonProjects: "See projects",
+      buttonContact: "Contact me",
+      role: "Technical computer expert",
+      typingWords: [
+        "Technical computer expert",
+        "React - Node - Tailwind",
+        "Interfaces with character",
+      ],
+      tagline: "I build full stack solutions with a focus on architecture, product and growth.",
+    },
+    about: {
+      eyebrow: "About me",
+      title: "Who I am behind the code.",
+      details: {
+        edad: "Age",
+        ubicacion: "Location",
+        experiencia: "Experience",
+        formacion: "Education",
+        disponibilidad: "Availability",
+        email: "Email",
+      },
+    },
+    skills: {
+      eyebrow: "Skills",
+      title: "Tools I build with.",
+      description:
+        "I have participated in projects as Scrum Master, Product Owner and Full Stack Developer, connecting product planning with technical implementation.",
+      agile: {
+        title: "Agile methodology",
+        methodology: "Scrum",
+        responsibilitiesTitle: "Responsibilities",
+        strengthsTitle: "Strengths",
+      },
+      roles: ["Scrum Master", "Product Owner", "Full Stack Developer"],
+    },
+    experience: {
+      eyebrow: "Experience",
+      title: "Education and experience.",
+      education: "Education",
+      experience: "Experience",
+    },
+    projects: {
+      eyebrow: "Projects",
+      title: "Selected work.",
+      modalRepo: "Repository",
+      modalDemo: "Demo",
+    },
+    achievements: {
+      eyebrow: "Achievements",
+      title: "Numbers and recognition.",
+      certificates: "Certificates",
+      viewImage: "View image",
+      downloadPdf: "Download PDF",
+    },
+    contact: {
+      eyebrow: "Contact",
+      title: "Let’s work together.",
+      description:
+        "Have a project or opportunity in mind? Write to me and let’s talk. I’ll reply as soon as possible.",
+      fieldName: "Name",
+      fieldSubject: "Subject",
+      fieldMessage: "Message",
+      placeholderName: "Your name",
+      placeholderSubject: "What are we talking about?",
+      placeholderMessage: "Tell me about your project...",
+      buttonSend: "Send message",
+      buttonSent: "Mail sent",
+    },
+    footer: {
+      backToTop: "Back to top",
+      designedWith: "Designed and built with React",
+      cv: "CV",
+    },
+  },
+}
