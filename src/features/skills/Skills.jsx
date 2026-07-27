@@ -5,7 +5,7 @@ import Badge from "@/shared/components/ui/Badge"
 import Card from "@/shared/components/ui/Card"
 import ProgressBar from "@/shared/components/ui/ProgressBar"
 import { agileProfile, skillGroups } from "@/shared/constants/skills"
-import { fadeUp, stagger, revealViewport } from "@/shared/hooks/useScrollReveal"
+import { fadeUp, stagger } from "@/shared/hooks/useScrollReveal"
 
 const groupIcons = [Layers, Server, Wrench, Rocket]
 
@@ -21,7 +21,7 @@ export default function Skills() {
         variants={stagger(0.12)}
         initial="hidden"
         whileInView="show"
-        viewport={revealViewport}
+        viewport={{ once: true, amount: 0 }}
         className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 xl:grid-cols-4"
       >
         {skillGroups.map((group, gi) => {
@@ -54,7 +54,7 @@ export default function Skills() {
         variants={stagger(0.1)}
         initial="hidden"
         whileInView="show"
-        viewport={revealViewport}
+        viewport={{ once: true, amount: 0 }}
         className="mt-8 grid gap-6"
       >
         <div className="grid gap-6 lg:grid-cols-2">

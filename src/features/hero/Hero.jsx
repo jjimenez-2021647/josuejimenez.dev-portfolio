@@ -126,7 +126,7 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
           className="relative lg:col-span-5"
         >
-          <div className="relative mx-auto max-w-[31rem] pb-16 pl-4 sm:pb-20 sm:pl-14">
+          <div className="relative mx-auto max-w-sm sm:max-w-[31rem] px-2 sm:px-0 pb-12 sm:pb-16 lg:pb-20">
             <div className="absolute left-0 top-10 h-[25rem] w-[45%] rounded-[2.5rem] border border-[--color-border]/30 bg-[--color-background]/20 backdrop-blur-xl shadow-[0_45px_90px_-45px_rgba(56,189,248,0.55)]" />
             <div className="relative z-10 overflow-hidden rounded-[2.5rem] border border-[--color-border] bg-[--color-surface]/95 shadow-2xl shadow-[rgba(0,0,0,0.18)]">
               <div className="relative aspect-[4/5] overflow-hidden">
@@ -160,32 +160,32 @@ export default function Hero() {
                   />
                 </AnimatePresence>
                 <div className="absolute inset-0 bg-gradient-to-t from-[--color-background]/90 via-transparent to-transparent" />
-                <div className="absolute left-4 bottom-4 rounded-full border border-[--color-border] bg-[--color-background]/80 px-3 py-1 text-xs text-[--color-muted] backdrop-blur">
+                <div className="absolute left-3 bottom-3 sm:left-4 sm:bottom-4 rounded-full border border-[--color-border] bg-[--color-background]/80 px-3 py-1 text-xs text-[--color-muted] backdrop-blur">
                   {activeVisual.alt}
                 </div>
               </div>
             </div>
 
-            <div className="mt-4 flex items-center justify-between gap-3 text-sm text-[--color-muted] sm:mt-6 sm:gap-4">
-              <div className="flex items-center gap-2 sm:gap-3">
+            <div className="mt-3 sm:mt-4 flex items-center justify-between gap-2 sm:gap-4 text-sm text-[--color-muted]">
+              <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
                 <button
                   type="button"
                   onClick={() => navigateVisual(-1)}
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition sm:h-11 sm:w-11 hover:bg-[--color-surface] hover:text-[--color-accent]"
+                  className="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition sm:h-10 sm:w-10 hover:bg-[--color-surface] hover:text-[--color-accent]"
                   aria-label="Imagen anterior"
                 >
-                  <ChevronLeft size={16} className="sm:h-[18px] sm:w-[18px]" />
+                  <ChevronLeft size={14} className="sm:h-[18px] sm:w-[18px]" />
                 </button>
                 <button
                   type="button"
                   onClick={() => navigateVisual(1)}
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition sm:h-11 sm:w-11 hover:bg-[--color-surface] hover:text-[--color-accent]"
+                  className="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition sm:h-10 sm:w-10 hover:bg-[--color-surface] hover:text-[--color-accent]"
                   aria-label="Imagen siguiente"
                 >
-                  <ChevronRight size={16} className="sm:h-[18px] sm:w-[18px]" />
+                  <ChevronRight size={14} className="sm:h-[18px] sm:w-[18px]" />
                 </button>
               </div>
-              <span className="hidden sm:inline">Toca las flechas para ver otra vista</span>
+              <span className="hidden sm:inline text-xs sm:text-sm flex-shrink-0">Toca las flechas para ver otra vista</span>
             </div>
           </div>
         </motion.div>

@@ -35,4 +35,7 @@ export const stagger = (staggerChildren = 0.12, delayChildren = 0) => ({
 })
 
 /** Props por defecto para whileInView. */
-export const revealViewport = { once: true, amount: 0.25 }
+export const revealViewport = { once: true, amount: 0.15 }
+
+/** Props para móvil - carga inmediata sin esperar scroll */
+export const revealViewportMobile = { once: true, amount: 0 }
