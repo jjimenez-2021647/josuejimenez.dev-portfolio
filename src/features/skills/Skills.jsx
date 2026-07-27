@@ -22,7 +22,7 @@ export default function Skills() {
         initial="hidden"
         whileInView="show"
         viewport={revealViewport}
-        className="grid gap-6 md:grid-cols-2 xl:grid-cols-4"
+        className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 xl:grid-cols-4"
       >
         {skillGroups.map((group, gi) => {
           const Icon = groupIcons[gi % groupIcons.length]

@@ -18,7 +18,7 @@ export default function SectionWrapper({
   return (
     <section
       id={id}
-      className={cn("relative scroll-mt-24 px-6 py-24 md:px-10 lg:py-32", className)}
+      className={cn("relative scroll-mt-24 px-4 py-16 sm:px-6 sm:py-24 md:px-10 lg:py-32", className)}
     >
       <div className="mx-auto max-w-6xl">
         {(eyebrow || title) && (
@@ -27,7 +27,7 @@ export default function SectionWrapper({
             initial="hidden"
             whileInView="show"
             viewport={revealViewport}
-            className="mb-14"
+            className="mb-8 sm:mb-14"
           >
             {eyebrow && (
               <div className="mb-3 flex items-center gap-3 font-mono text-xs text-[--color-accent]">
@@ -41,7 +41,7 @@ export default function SectionWrapper({
               </div>
             )}
             {title && (
-              <h2 className="max-w-3xl font-display text-3xl font-semibold leading-tight tracking-tight text-balance md:text-5xl">
+              <h2 className="max-w-3xl font-display text-2xl font-semibold leading-tight tracking-tight text-balance sm:text-4xl md:text-5xl">
                 {title}
               </h2>
             )}

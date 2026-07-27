@@ -126,7 +126,7 @@ export default function Hero() {
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
           className="relative lg:col-span-5"
         >
-          <div className="relative mx-auto max-w-[31rem] pb-20 pl-8 sm:pl-14">
+          <div className="relative mx-auto max-w-[31rem] pb-16 pl-4 sm:pb-20 sm:pl-14">
             <div className="absolute left-0 top-10 h-[25rem] w-[45%] rounded-[2.5rem] border border-[--color-border]/30 bg-[--color-background]/20 backdrop-blur-xl shadow-[0_45px_90px_-45px_rgba(56,189,248,0.55)]" />
             <div className="relative z-10 overflow-hidden rounded-[2.5rem] border border-[--color-border] bg-[--color-surface]/95 shadow-2xl shadow-[rgba(0,0,0,0.18)]">
               <div className="relative aspect-[4/5] overflow-hidden">
@@ -166,23 +166,23 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="mt-6 flex items-center justify-between gap-4 text-sm text-[--color-muted]">
-              <div className="flex items-center gap-3">
+            <div className="mt-4 flex items-center justify-between gap-3 text-sm text-[--color-muted] sm:mt-6 sm:gap-4">
+              <div className="flex items-center gap-2 sm:gap-3">
                 <button
                   type="button"
                   onClick={() => navigateVisual(-1)}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition hover:bg-[--color-surface] hover:text-[--color-accent]"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition sm:h-11 sm:w-11 hover:bg-[--color-surface] hover:text-[--color-accent]"
                   aria-label="Imagen anterior"
                 >
-                  <ChevronLeft size={18} />
+                  <ChevronLeft size={16} className="sm:h-[18px] sm:w-[18px]" />
                 </button>
                 <button
                   type="button"
                   onClick={() => navigateVisual(1)}
-                  className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition hover:bg-[--color-surface] hover:text-[--color-accent]"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition sm:h-11 sm:w-11 hover:bg-[--color-surface] hover:text-[--color-accent]"
                   aria-label="Imagen siguiente"
                 >
-                  <ChevronRight size={18} />
+                  <ChevronRight size={16} className="sm:h-[18px] sm:w-[18px]" />
                 </button>
               </div>
               <span className="hidden sm:inline">Toca las flechas para ver otra vista</span>
