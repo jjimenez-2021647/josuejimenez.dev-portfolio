@@ -30,15 +30,15 @@ export default function Achievements() {
         initial="hidden"
         whileInView="show"
         viewport={revealViewport}
-        className="grid grid-cols-2 gap-4 md:grid-cols-4"
+        className="grid grid-cols-2 gap-2 sm:gap-4 lg:grid-cols-4"
       >
         {stats.map((stat) => (
           <motion.div key={stat.label} variants={fadeUp}>
             <Card className="text-center hover:border-[--color-accent]">
-              <p className="font-display text-4xl font-bold text-gradient md:text-5xl">
+              <p className="font-display text-2xl font-bold text-gradient sm:text-4xl lg:text-5xl">
                 <CountUp value={stat.value} />
               </p>
-              <p className="mt-2 text-sm text-[--color-muted]">{stat.label}</p>
+              <p className="mt-1 text-xs text-[--color-muted] sm:mt-2 sm:text-sm">{stat.label}</p>
             </Card>
           </motion.div>
         ))}
@@ -49,7 +49,7 @@ export default function Achievements() {
         initial="hidden"
         whileInView="show"
         viewport={revealViewport}
-        className="mt-6 grid gap-6 md:grid-cols-3"
+        className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
       >
         {achievements.map((item, i) => {
           const Icon = icons[i % icons.length]
@@ -111,7 +111,7 @@ export default function Achievements() {
         <p className="font-display text-sm font-semibold uppercase tracking-[0.3em] text-[--color-accent]">
           Certificados
         </p>
-        <div className="mt-6 grid gap-6 md:grid-cols-3">
+        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {certificates.map((cert) => (
             <Card key={cert.title} glow className="overflow-hidden p-0">
               <div className="relative overflow-hidden bg-[--color-surface-2]">
@@ -119,13 +119,15 @@ export default function Achievements() {
                   src={cert.image}
                   alt={`Certificado de ${cert.title}`}
                   onError={(e) => {
-                    e.currentTarget.src = "/placeholder.svg"
+                    e.currentTarget.style.background = 'var(--color-surface-2)'
+                    e.currentTarget.style.display = 'none'
                   }}
-                  className="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"
+                  className="aspect-video w-full object-contain transition duration-500 hover:scale-105 sm:aspect-[4/3]"
+                  loading="lazy"
                 />
               </div>
-              <div className="p-6">
-                <h4 className="font-display text-lg font-semibold">
+              <div className="flex flex-col p-4 sm:p-6">
+                <h4 className="font-display text-base font-semibold sm:text-lg">
                   {cert.title}
                 </h4>
                 <div className="mt-2 flex flex-wrap items-center gap-2 text-xs text-[--color-muted-2]">
@@ -133,25 +135,29 @@ export default function Achievements() {
                   <span>•</span>
                   <span>{cert.org}</span>
                 </div>
-                <p className="mt-3 text-sm leading-relaxed text-[--color-muted]">
+                <p className="mt-3 flex-grow text-sm leading-relaxed text-[--color-muted]">
                   {cert.description}
                 </p>
-                <div className="mt-5 flex items-center justify-between gap-3">
+                <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:gap-3">
                   <button
                     type="button"
-                    className="inline-flex items-center gap-2 rounded-full border border-[--color-border] bg-transparent px-4 py-2 text-sm text-[--color-foreground] transition hover:border-[--color-accent] hover:text-[--color-accent]"
+                    className="inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-[--color-border] bg-transparent px-3 py-2 text-xs font-medium text-[--color-foreground] transition sm:px-4 sm:py-2 sm:text-sm hover:border-[--color-accent] hover:text-[--color-accent]"
                     onClick={() => setSelected(cert)}
                   >
-                    <Image size={16} />
-                    Ver imagen
+                    <Image size={14} className="sm:h-4 sm:w-4" />
+                    <span className="hidden sm:inline">Ver imagen</span>
+                    <span className="sm:hidden">Ver</span>
                   </button>
                   <a
                     href={cert.pdf}
-                    download
-                    className="inline-flex items-center gap-2 rounded-full bg-[--color-accent] px-4 py-2 text-sm font-semibold text-[--color-background] transition hover:bg-[--color-accent-soft]"
+                    download={cert.downloadName || cert.pdf.split("/").pop()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-[--color-accent] px-3 py-2 text-xs font-semibold text-[--color-background] transition sm:px-4 sm:py-2 sm:text-sm hover:bg-[--color-accent-soft]"
                   >
-                    <Download size={16} />
-                    Descargar PDF
+                    <Download size={14} className="sm:h-4 sm:w-4" />
+                    <span className="hidden sm:inline">Descargar</span>
+                    <span className="sm:hidden">PDF</span>
                   </a>
                 </div>
               </div>
