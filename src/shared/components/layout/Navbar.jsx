@@ -25,15 +25,12 @@ export default function Navbar() {
   }, [])
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : ""
-
     const onKeyDown = (e) => {
       if (e.key === "Escape") setOpen(false)
     }
 
     window.addEventListener("keydown", onKeyDown)
     return () => {
-      document.body.style.overflow = ""
       window.removeEventListener("keydown", onKeyDown)
     }
   }, [open])
@@ -57,7 +54,7 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         className={cn(
-          "fixed inset-x-0 top-0 z-50 border border-white/10 bg-[rgba(3,7,20,0.72)] backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.22)] transition-all duration-300",
+          "relative fixed inset-x-0 top-0 z-50 border border-white/10 bg-[rgba(3,7,20,0.72)] backdrop-blur-xl shadow-[0_24px_80px_rgba(0,0,0,0.22)] transition-all duration-300",
           scrolled ? "backdrop-blur-2xl" : "",
         )}
       >
@@ -115,54 +112,59 @@ export default function Navbar() {
             >
               {lang === "es" ? "EN" : "ES"}
             </button>
-            <button
-              type="button"
-              className="rounded-lg p-2 text-[--color-foreground] lg:hidden"
-              onClick={() => setOpen((v) => !v)}
-              aria-expanded={open}
-              aria-controls="mobile-navigation"
-              aria-label={open ? "Cerrar menú" : "Abrir menú"}
-            >
-              {open ? <X size={22} /> : <Menu size={22} />}
-            </button>
           </div>
+
+          <button
+            type="button"
+            className="rounded-lg p-2 text-[--color-foreground] lg:hidden"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
+            aria-label={open ? "Cerrar menú" : "Abrir menú"}
+          >
+            {open ? <X size={22} /> : <Menu size={22} />}
+          </button>
         </nav>
       </motion.header>
 
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-40 bg-[--color-background]/95 backdrop-blur-xl lg:hidden"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="fixed inset-x-0 top-20 z-40 px-6 lg:hidden"
           >
-            <ul
-              id="mobile-navigation"
-              className="flex h-full flex-col items-center justify-center gap-4 px-6 pt-20"
-            >
-              {navLinks.map((link, i) => (
-                <motion.li
-                  key={link.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.05 * i }}
-                >
-                  <a
-                    href={`#${link.id}`}
-                    onClick={(e) => handleClick(e, link.id)}
-                    className={cn(
-                      "font-display text-2xl font-medium transition-colors",
-                      active === link.id
-                        ? "text-[--color-accent]"
-                        : "text-[--color-foreground]",
-                    )}
+            <div className="overflow-hidden rounded-3xl border border-white/10 bg-[rgba(3,7,20,0.92)] backdrop-blur-xl py-5 shadow-2xl shadow-[rgba(0,0,0,0.35)]">
+              <ul
+                id="mobile-navigation"
+                className="flex flex-col items-center gap-3 px-6"
+              >
+                {navLinks.map((link, i) => (
+                  <motion.li
+                    key={link.id}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    transition={{ delay: 0.05 * i }}
+                    className="w-full"
                   >
-                    {t.nav[link.id]}
-                  </a>
-                </motion.li>
-              ))}
-            </ul>
+                    <a
+                      href={`#${link.id}`}
+                      onClick={(e) => handleClick(e, link.id)}
+                      className={cn(
+                        "block w-full rounded-full px-5 py-3 text-center text-lg font-medium transition-colors",
+                        active === link.id
+                          ? "bg-[--color-surface] text-[--color-accent]"
+                          : "text-[--color-foreground] hover:bg-[--color-surface]/60 hover:text-[--color-accent]",
+                      )}
+                    >
+                      {t.nav[link.id]}
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
