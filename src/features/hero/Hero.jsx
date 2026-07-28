@@ -190,6 +190,10 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+
+      <div className="mt-12 px-6 md:px-10">
+        <TechMarquee />
+      </div>
     </section>
   )
 }

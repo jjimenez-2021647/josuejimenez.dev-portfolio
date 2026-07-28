@@ -113,13 +113,13 @@ export default function TechMarquee() {
     <div className="relative overflow-hidden border-y border-[--color-border] py-4 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
       <div className="flex flex-col gap-3">
         {/* Top row: nombres */}
-        <div className="animate-marquee flex w-max items-center gap-12">
+        <div className="animate-marquee flex w-max items-center gap-8 sm:gap-12">
           {items.map((tech, i) => (
             <span
               key={`r1-${i}`}
-              className="flex items-center gap-3 font-mono text-sm text-[--color-muted] opacity-95"
+              className="flex items-center gap-2 font-mono text-[10px] sm:text-sm text-[--color-muted] opacity-95"
             >
-              <span className="hidden sm:inline">{tech}</span>
+              <span>{tech}</span>
               <span className="text-[--color-accent]">•</span>
             </span>
           ))}
@@ -140,13 +140,13 @@ export default function TechMarquee() {
         </div>
 
         {/* Bottom row: nombres (más sutil) */}
-        <div className="animate-marquee flex w-max items-center gap-12" style={{ animationDuration: "36s" }}>
+        <div className="animate-marquee flex w-max items-center gap-8 sm:gap-12" style={{ animationDuration: "36s" }}>
           {items.map((tech, i) => (
             <span
               key={`r3-${i}`}
-              className="flex items-center gap-3 font-mono text-sm text-[--color-muted] opacity-80"
+              className="flex items-center gap-2 font-mono text-[10px] sm:text-sm text-[--color-muted] opacity-80"
             >
-              <span className="hidden sm:inline">{tech}</span>
+              <span>{tech}</span>
               <span className="text-[--color-accent]">•</span>
             </span>
           ))}
