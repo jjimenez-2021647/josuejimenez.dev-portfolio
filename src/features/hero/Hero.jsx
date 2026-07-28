@@ -166,12 +166,12 @@ export default function Hero() {
               </div>
             </div>
 
-            <div className="mt-3 sm:mt-4 flex items-center justify-between gap-2 sm:gap-4 text-sm text-[--color-muted]">
-              <div className="flex items-center gap-1.5 sm:gap-2 flex-shrink-0">
+            <div className="mt-3 sm:mt-4 flex flex-col items-center gap-3 text-sm text-[--color-muted] sm:flex-row sm:justify-between sm:gap-4">
+              <div className="flex items-center gap-1.5 sm:gap-2">
                 <button
                   type="button"
                   onClick={() => navigateVisual(-1)}
-                  className="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition sm:h-10 sm:w-10 hover:bg-[--color-surface] hover:text-[--color-accent]"
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition sm:h-10 sm:w-10 hover:bg-[--color-surface] hover:text-[--color-accent]"
                   aria-label="Imagen anterior"
                 >
                   <ChevronLeft size={14} className="sm:h-[18px] sm:w-[18px]" />
@@ -179,13 +179,13 @@ export default function Hero() {
                 <button
                   type="button"
                   onClick={() => navigateVisual(1)}
-                  className="inline-flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition sm:h-10 sm:w-10 hover:bg-[--color-surface] hover:text-[--color-accent]"
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-full border border-[--color-border] bg-[--color-surface]/80 text-[--color-foreground] transition sm:h-10 sm:w-10 hover:bg-[--color-surface] hover:text-[--color-accent]"
                   aria-label="Imagen siguiente"
                 >
                   <ChevronRight size={14} className="sm:h-[18px] sm:w-[18px]" />
                 </button>
               </div>
-              <span className="hidden sm:inline text-xs sm:text-sm flex-shrink-0">Toca las flechas para ver otra vista</span>
+              <span className="text-xs sm:text-sm">Toca las flechas para ver otra vista</span>
             </div>
           </div>
         </motion.div>
