@@ -25,7 +25,7 @@ const terminalLines = [
 const heroVisuals = [
   {
     src: "/hero-visual-JJ-Expo.png",
-    alt: "Presentacion de proyecto",
+    alt: "Presentación de proyecto",
   },
   {
     src: "/profile.jpeg",
@@ -106,7 +106,7 @@ export default function Hero() {
           <motion.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-4">
             <Button revealDelay={0.04} onClick={() => scrollTo("projects")}>Ver proyectos</Button>
             <Button revealDelay={0.12} variant="outline" onClick={() => scrollTo("contact")}>
-              Contactame
+              Contáctame
             </Button>
             <a
               href={socials.github}

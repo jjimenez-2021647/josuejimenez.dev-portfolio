@@ -102,15 +102,15 @@ export const projects = [
   }
   /*{
     title: "Resino y About Me",
-    subtitle: "Proyectos de presentacion e identidad digital",
+    subtitle: "Proyectos de presentación e identidad digital",
     description:
-      "Conjunto de proyectos enfocados en presentacion personal, estructura visual y comunicacion digital, aplicando fundamentos de frontend, diseno responsivo y organizacion de contenido.",
+      "Conjunto de proyectos enfocados en presentación personal, estructura visual y comunicación digital, aplicando fundamentos de frontend, diseño responsivo y organización de contenido.",
     image: "/projects/project-1.png",
     images: ["/projects/project-1.png"],
     tags: ["HTML", "CSS", "JavaScript", "Figma"],
     learned: [
       "Estructura de paginas personales",
-      "Diseno visual aplicado a contenido real",
+      "Diseño visual aplicado a contenido real",
       "Mejora de responsive design y jerarquia visual",
     ],
     repo: "#",
@@ -119,16 +119,16 @@ export const projects = [
   },
   {
     title: "Veterinaria",
-    subtitle: "Sistema de gestion presentado en Expo Kinal 2025",
+    subtitle: "Sistema de gestión presentado en Expo Kinal 2025",
     description:
-      "Sistema para administracion de procesos veterinarios, con enfoque en gestion de informacion, clientes, servicios y operaciones internas. Fue presentado como proyecto tecnico en Expo Kinal 2025.",
+      "Sistema para administración de procesos veterinarios, con enfoque en gestión de información, clientes, servicios y operaciones internas. Fue presentado como proyecto técnico en Expo Kinal 2025.",
     image: "/projects/project-2.png",
     images: ["/projects/project-2.png"],
     tags: ["Java Web", "MySQL", "Postman", "Scrum"],
     learned: [
-      "Analisis de requerimientos para un negocio real",
+      "Análisis de requerimientos para un negocio real",
       "Modelado de base de datos relacional",
-      "Presentacion tecnica de un producto funcional",
+      "Presentación técnica de un producto funcional",
     ],
     repo: "#",
     demo: "#",

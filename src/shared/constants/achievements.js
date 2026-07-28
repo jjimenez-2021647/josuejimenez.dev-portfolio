@@ -4,59 +4,59 @@
 
 export const stats = [
   { value: "2", label: "Expos Kinal" },
-  { value: "1", label: "Prepractica en empresa" },
-  { value: "20+", label: "Tecnologias trabajadas" },
-  { value: "B2", label: "Nivel de ingles" },
+  { value: "1", label: "Práctica en empresa" },
+  { value: "20+", label: "Tecnologías trabajadas" },
+  { value: "B2", label: "Nivel de inglés" },
 ]
 
 export const achievements = [
   {
     title: "SynapseCode en Expo Kinal 2026",
-    org: "Centro Educativo Tecnico Laboral Kinal",
+    org: "Centro Educativo Técnico Laboral Kinal",
     year: "2026",
     image: "",
     description:
-      "Proyecto escalable y robusto presentado en Expo Kinal 2026, con buena recepcion por parte de los visitantes.",
+      "Proyecto escalable y robusto presentado en Expo Kinal 2026, con buena recepción por parte de los visitantes.",
   },
   {
-    title: "Sistema de gestion para veterinarias",
+    title: "Sistema de gestión para veterinarias",
     org: "Expo Kinal",
     year: "2025",
     image: "",
     description:
-      "Solucion desarrollada para administrar procesos de veterinarias, presentada como proyecto tecnico en Expo Kinal 2025.",
+      "Solución desarrollada para administrar procesos de veterinarias, presentada como proyecto técnico en Expo Kinal 2025.",
   },
   {
-    title: "Prepracticas en Tecnologia Transaccional",
-    org: "Area de desarrollo web",
+    title: "Prácticas en Tecnología Transaccional",
+    org: "Área de desarrollo web",
     year: "2025",
     image: "",
     description:
-      "Participacion en modales para una aplicacion en produccion y documentacion de diccionario de datos bancario.",
+      "Participación en modales para una aplicación en producción y documentación de diccionario de datos bancario.",
   },
   {
     title: "Curso aprobado de Power BI",
-    org: "Formacion complementaria",
+    org: "Formación complementaria",
     year: "2026",
     image: "",
     description:
-      "Curso aprobado enfocado en analisis de datos, visualizacion y creacion de reportes interactivos.",
+      "Curso aprobado enfocado en análisis de datos, visualización y creación de reportes interactivos.",
   },
   {
     title: "Curso de Java",
-    org: "Formacion complementaria",
+    org: "Formación complementaria",
     year: "2024",
     image: "",
     description:
-      "Curso orientado al fortalecimiento de fundamentos de programacion y desarrollo con Java.",
+      "Curso orientado al fortalecimiento de fundamentos de programación y desarrollo con Java.",
   },
   {
-    title: "Curso de tablas dinamicas",
-    org: "Formacion complementaria",
+    title: "Curso de tablas dinámicas",
+    org: "Formación complementaria",
     year: "2024",
     image: "",
     description:
-      "Formacion enfocada en organizacion, analisis y presentacion de datos mediante tablas dinamicas.",
+      "Formación enfocada en organización, análisis y presentación de datos mediante tablas dinámicas.",
   },
 ]
 

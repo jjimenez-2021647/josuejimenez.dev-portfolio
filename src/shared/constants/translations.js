@@ -2,7 +2,7 @@ export const translations = {
   es: {
     nav: {
       home: "Inicio",
-      about: "Sobre mi",
+      about: "Sobre mí",
       skills: "Skills",
       experience: "Trayectoria",
       projects: "Proyectos",
@@ -40,8 +40,8 @@ export const translations = {
         "No solo desarrollo software funcional; diseño soluciones completas, escalables y listas para evolucionar.",
       role: "Perito técnico en computación",
       details: {
-        experiencia: "Expo Kinal, prepracticas y proyectos full stack",
-        disponibilidad: "Abierto a practica y proyectos",
+        experiencia: "Expo Kinal, preprácticas y proyectos full stack",
+        disponibilidad: "Abierto a práctica y proyectos",
       },
     },
     skills: {
@@ -59,8 +59,8 @@ export const translations = {
     },
     experience: {
       eyebrow: "Trayectoria",
-      title: "Educacion y experiencia.",
-      education: "Educacion",
+      title: "Educación y experiencia.",
+      education: "Educación",
       experience: "Experiencia",
     },
     projects: {
@@ -71,7 +71,7 @@ export const translations = {
     },
     achievements: {
       eyebrow: "Logros",
-      title: "Numeros y reconocimientos.",
+      title: "Números y reconocimientos.",
       certificates: "Certificados",
       viewImage: "Ver imagen",
       downloadPdf: "Descargar PDF",
@@ -80,13 +80,13 @@ export const translations = {
       eyebrow: "Contacto",
       title: "Trabajemos juntos.",
       description:
-        "Tienes un proyecto en mente o una oportunidad? Escribeme y conversemos. Respondo lo antes posible.",
+        "Tienes un proyecto en mente o una oportunidad? Escríbeme y conversemos. Respondo lo antes posible.",
       fieldName: "Nombre",
       fieldSubject: "Asunto",
       fieldMessage: "Mensaje",
       placeholderName: "Tu nombre",
-      placeholderSubject: "De que hablamos?",
-      placeholderMessage: "Cuentame sobre tu proyecto...",
+      placeholderSubject: "¿De qué hablamos?",
+      placeholderMessage: "Cuéntame sobre tu proyecto...",
       buttonSend: "Enviar mensaje",
       buttonSent: "Correo enviado",
     },

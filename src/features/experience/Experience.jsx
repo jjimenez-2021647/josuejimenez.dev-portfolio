@@ -46,7 +46,7 @@ export default function Experience() {
       id="experience"
       index={3}
       eyebrow="Trayectoria"
-      title="Educacion y experiencia."
+      title="Educación y experiencia."
     >
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div>
@@ -54,7 +54,7 @@ export default function Experience() {
             <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[--color-surface-2] text-[--color-accent]">
               <GraduationCap size={18} />
             </span>
-            <h3 className="font-display text-xl font-semibold">Educacion</h3>
+            <h3 className="font-display text-xl font-semibold">Educación</h3>
           </div>
           <Timeline items={education} />
         </div>

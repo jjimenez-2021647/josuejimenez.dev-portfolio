@@ -5,42 +5,42 @@
 export const education = [
   {
     period: "4to Perito",
-    title: "Fundamentos tecnicos y primeras bases de programacion",
-    place: "Centro Educativo Tecnico Laboral Kinal",
+    title: "Fundamentos técnicos y primeras bases de programación",
+    place: "Centro Educativo Técnico Laboral Kinal",
     description:
-      "Etapa enfocada en fundamentos de computacion, redes, herramientas de oficina, Cisco Packet Tracer y programacion orientada a objetos con Java. Durante este periodo tambien complete cursos de Java y tablas dinamicas.",
+      "Etapa enfocada en fundamentos de computación, redes, herramientas de oficina, Cisco Packet Tracer y programación orientada a objetos con Java. Durante este período también completé cursos de Java y tablas dinámicas.",
   },
   {
     period: "5to Perito",
-    title: "Desarrollo de proyectos y metodologias agiles",
+    title: "Desarrollo de proyectos y metodologías ágiles",
     place: "Kinal - Expo 2025",
     description:
-      "Profundice en bases de datos, Java Web, interfaces con Java FXML, APIs, control de versiones y Scrum. Participe en proyectos de mayor alcance, incluyendo una plataforma de gestion para veterinarias presentada en Expo Kinal 2025.",
+      "Profundicé en bases de datos, Java Web, interfaces con Java FXML, APIs, control de versiones y Scrum. Participé en proyectos de mayor alcance, incluyendo una plataforma de gestión para veterinarias presentada en Expo Kinal 2025.",
   },
   {
     period: "6to Perito",
-    title: "Arquitectura, productos escalables y cierre de formacion",
+    title: "Arquitectura, productos escalables y cierre de formación",
     place: "Kinal - Expo 2026",
     description:
-      "Cierre de formacion tecnica fortaleciendo tecnologias como C#, .NET, Node.js, React, React Native, Android Studio, PostgreSQL y MongoDB. Desarrolle SynapseCode, un proyecto robusto y escalable presentado en Expo Kinal 2026, y complemente mi perfil con Power BI e ingles B2.",
+      "Cierre de formación técnica fortaleciendo tecnologías como C#, .NET, Node.js, React, React Native, Android Studio, PostgreSQL y MongoDB. Desarrollé SynapseCode, un proyecto robusto y escalable presentado en Expo Kinal 2026, y completé mi perfil con Power BI e inglés B2.",
   },
 ]
 
 export const experience = [
   {
     period: "Octubre - noviembre 2025",
-    title: "Prepracticas en desarrollo web",
-    place: "Tecnologia Transaccional",
+    title: "Prácticas en desarrollo web",
+    place: "Tecnología Transaccional",
     description:
-      "Apoye el desarrollo de modales para una aplicacion que llego a produccion. Tambien trabaje en la documentacion de un diccionario de datos para un banco, agregando descripciones a campos y entidades como parte de un registro solicitado para control y trazabilidad de informacion.",
-    tags: ["Desarrollo web", "Modales", "Diccionario de datos", "Produccion"],
+      "Apoyé el desarrollo de modales para una aplicación que llegó a producción. También trabajé en la documentación de un diccionario de datos para un banco, agregando descripciones a campos y entidades como parte de un registro solicitado para control y trazabilidad de información.",
+    tags: ["Desarrollo web", "Modales", "Diccionario de datos", "Producción"],
   },
   {
     period: "2025",
-    title: "Sistema de gestion para veterinarias",
+    title: "Sistema de gestión para veterinarias",
     place: "Expo Kinal 2025",
     description:
-      "Participe en el desarrollo y presentacion de una solucion orientada a la administracion de veterinarias, aplicando bases de datos, logica de negocio, desarrollo web y trabajo colaborativo con metodologia Scrum.",
+      "Participé en el desarrollo y presentación de una solución orientada a la administración de veterinarias, aplicando bases de datos, lógica de negocio, desarrollo web y trabajo colaborativo con metodología Scrum.",
     tags: ["Java Web", "MySQL", "Scrum", "Postman"],
   },
   {
@@ -48,15 +48,15 @@ export const experience = [
     title: "SynapseCode",
     place: "Expo Kinal 2026",
     description:
-      "Desarrolle un proyecto completo, escalable y robusto que fue presentado en Expo Kinal 2026. El sistema logro responder correctamente a preguntas de los visitantes y recibio una respuesta positiva durante la exposicion.",
+      "Desarrollé un proyecto completo, escalable y robusto que fue presentado en Expo Kinal 2026. El sistema logró responder correctamente a preguntas de los visitantes y recibió una respuesta positiva durante la exposición.",
     tags: ["React", "Node.js", "Arquitectura", "IA"],
   },
   {
     period: "Pendiente 2026",
-    title: "Proyecto con Fundacion Amivalle y proximas practicas",
+    title: "Proyecto con Fundación Amivalle y próximas prácticas",
     place: "Desarrollo frontend y backend",
     description:
-      "Proyecto con Fundacion Amivalle y practicas pendientes en Tecnologia Transaccional, con enfoque en desarrollo web y participacion tanto en backend como en frontend.",
+      "Proyecto con Fundación Amivalle y prácticas pendientes en Tecnología Transaccional, con enfoque en desarrollo web y participación tanto en backend como en frontend.",
     tags: ["Full Stack", "Backend", "Frontend", "Impacto social"],
   },
 ]

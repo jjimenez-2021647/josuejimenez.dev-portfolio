@@ -23,7 +23,7 @@ export default function Achievements() {
       id="achievements"
       index={5}
       eyebrow="Logros"
-      title="Numeros y reconocimientos."
+      title="Números y reconocimientos."
     >
       <motion.div
         variants={stagger(0.1)}

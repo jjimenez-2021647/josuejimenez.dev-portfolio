@@ -85,13 +85,13 @@ export default function Contact() {
               variants={fadeUp}
               className="text-pretty text-lg leading-relaxed text-[--color-muted]"
             >
-              Tienes un proyecto en mente o una oportunidad? Escribeme y
+              Tienes un proyecto en mente o una oportunidad? Escríbeme y
               conversemos. Respondo lo antes posible.
             </motion.p>
 
             <motion.div variants={fadeUp} className="mt-10">
               <p className="mb-3 font-mono text-xs uppercase tracking-wide text-[--color-muted-2]">
-                Encuentrame en
+                Encuéntrame en
               </p>
               <div className="grid grid-cols-2 gap-3">
                 {socialItems.map(({ label, href, icon: Icon }) => (
@@ -139,7 +139,7 @@ export default function Contact() {
                   required
                 />
               </div>
-              <Field label="Asunto" name="_subject" placeholder="De que hablamos?" />
+              <Field label="Asunto" name="_subject" placeholder="¿De qué hablamos?" />
               <div>
                 <label
                   htmlFor="message"
@@ -152,7 +152,7 @@ export default function Contact() {
                   name="message"
                   rows={5}
                   required
-                  placeholder="Cuentame sobre tu proyecto..."
+                  placeholder="Cuéntame sobre tu proyecto..."
                   className="w-full resize-none rounded-xl border border-[--color-border] bg-[--color-surface-2] px-4 py-3 text-sm text-[--color-foreground] placeholder:text-[--color-muted-2] focus:border-[--color-accent] focus:outline-none"
                 />
               </div>
